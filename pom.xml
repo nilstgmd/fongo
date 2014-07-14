@@ -181,6 +181,18 @@
 
     <build>
         <plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<!-- This version is necessary for use with git version 1.8.5 and for SCM-740 -->
+						<version>1.10-b4aee5091bf</version>
+					</dependency>
+				</dependencies>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
