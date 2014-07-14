@@ -19,6 +19,19 @@
         <url>https://github.com/nilstgmd/fongo.git</url>
     </scm>
 
+	<distributionManagement>
+		<repository>
+			<id>adobe-sc-dev</id>
+			<name>SharedCloud Releases</name>
+			<url>http://nexus.bsl.eur.adobe.com/content/repositories/adobe-sc-dev</url>
+		</repository>
+		<snapshotRepository>
+			<id>adobe-sc-dev-snapshots</id>
+			<name>SharedCloud Snapshots</name>
+			<url>http://nexus.bsl.eur.adobe.com/content/repositories/adobe-sc-dev-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
     <prerequisites>
         <maven>3.0.4</maven>
     </prerequisites>
